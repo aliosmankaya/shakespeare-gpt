@@ -11,3 +11,5 @@ num_heads = 6
 n_layer = 6
 dropout = 0.2
 device = "cuda" if torch.cuda.is_available() else "cpu"
+is_save = False
+path = "./model.pt"

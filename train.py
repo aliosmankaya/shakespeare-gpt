@@ -2,7 +2,7 @@ import torch
 
 from data import get_batch
 from network import GPTLanguageModel
-from parameters import device, eval_interval, eval_iters, learning_rate, max_iters
+from parameters import *
 
 torch.manual_seed(1337)
 
@@ -41,3 +41,7 @@ for iter in range(max_iters):
     optimizer.zero_grad(set_to_none=True)
     loss.backward()
     optimizer.step()
+
+
+if is_save:
+    torch.save(m.state_dict(), path)
