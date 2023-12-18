@@ -1,5 +1,9 @@
+import torch
 import torch.nn as nn
 from torch.nn import functional as F
+
+from data import vocab_size
+from parameters import block_size, device, dropout, n_embed, n_layer, num_heads
 
 
 class Head(nn.Module):

@@ -1,3 +1,5 @@
+import torch
+
 batch_size = 64
 block_size = 256
 max_iters = 5000
