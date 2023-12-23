@@ -31,7 +31,7 @@ You can easily train the model:
 python3 train.py
 ```
 
-If you want to configure the parameters, you can change on **parameters.py**
+If you want to configure the parameters, you can change on [parameters.py](parameters.py)
 
 Train output:
 
@@ -71,7 +71,7 @@ To generate Shakespeare plays with trained model:
 python3 inference.py
 ```
 
-Check the example output on **gen.txt**
+Check the example output on [gen.txt](gen.txt)
 
 ## About
 
