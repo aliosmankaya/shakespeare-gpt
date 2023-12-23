@@ -51,7 +51,6 @@ if block_size < model.config.block_size:
     model.crop_block_size(block_size)
     model_args["block_size"] = block_size
 m = model.to(device)
-print(sum(p.numel() for p in m.parameters()) / 1e6, "M parameters")
 
 optimizer = model.configure_optimizers(
     weight_decay, learning_rate, (beta1, beta2), device
