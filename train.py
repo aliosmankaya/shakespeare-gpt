@@ -54,7 +54,7 @@ m = model.to(device)
 print(sum(p.numel() for p in m.parameters()) / 1e6, "M parameters")
 
 optimizer = model.configure_optimizers(
-    weight_decay, learning_rate, (beta1, beta2), device_type
+    weight_decay, learning_rate, (beta1, beta2), device
 )
 
 for iter in range(max_iters):

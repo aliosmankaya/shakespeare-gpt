@@ -24,7 +24,6 @@ dtype = (
     if torch.cuda.is_available() and torch.cuda.is_bf16_supported()
     else "float16"
 )
-device = "cpu"
-device_type = "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 is_save = False
 path = "./model.pt"
