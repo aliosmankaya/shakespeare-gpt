@@ -73,6 +73,6 @@ python3 inference.py
 
 Check the example output on [gen.txt](gen.txt)
 
-## About
+## Citation
 
 This project based on Andrej Karpathy's [video lecture](https://www.youtube.com/watch?v=kCc8FmEb1nY) and [codes](https://github.com/karpathy/nanoGPT).
